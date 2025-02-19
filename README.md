@@ -1,0 +1,2 @@
+# Rie-coin
+use
