@@ -1,0 +1,92 @@
+rieMiner 2501, Riecoin miner by Pttn and contributors
+Project page: https://riecoin.xyz/rieMiner
+Riecoin Whitepaper: https://riecoin.xyz/Whitepaper
+Launch with 'help' as first argument for a quick usage guide
+-----------------------------------------------------------
+Assembly code by Michael Bell (Rockhawk)
+G++ 9.4.0 - https://gcc.gnu.org/
+GMP 6.2.0 - https://gmplib.org/
+PicoSHA2 27fcf69 - https://github.com/okdshin/PicoSHA2
+Curl 7.68.0 - https://curl.haxx.se/
+NLohmann Json 3.7.3 - https://json.nlohmann.me/
+-----------------------------------------------------------
+Build for: Linux on x64
+Processor: AMD EPYC 7763 64-Core Processor                
+Best SIMD instructions supported by the CPU: AVX2
+This build supports AVX2
+Physical Memory: 15.606 GiB
+-----------------------------------------------------------
+Opening configuration file /workspaces/codespaces-blank/new/rieMiner/rie.conf...
+Debug file: rieMiner_debug_2025-02-17_133938.log
+Can be disabled with 'LogDebug = No'.
+Pooled mining via host Stelo.xyz, port 2005
+Username: ric1pstel08s5pnm6mz2e3u90jag0v3gcjsjpnwf0lp370j9z32scqg4qv5ku6r
+Password: <0 character(s)>
+Auto retune when the Difficulty varies by a factor 1.03
+Stats refresh interval: 30 s
+Connecting to Riecoin server...
+Host: Stelo.xyz -> 195.15.240.165
+Sending: {"id": 0, "method": "mining.subscribe", "params": ["rieMiner/2501"]}
+Received: {"id": 0, "result": [[["mining.notify", "00025a49"]],"00025a49", 4], "error": null}
+Successfully subscribed to the pool. Subscriptions:
+	mining.notify: 00025a49
+ExtraNonce1    = 00025a49
+extraNonce2Len = 4
+Received: {"id": 1, "result": true, "error": null}
+{"id": null, "method": "mining.notify", "params": ["17c75", "7b6624cdca05b2dc9f701f064259c414aa2f292d611fb2264d3ab2b966cbc61b", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c22723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fe00", "67b33c19", true, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
+Successfully authorized by the pool.
+Accepted constellation pattern(s):
+	0 - 0, 2, 4, 2, 4, 6, 2
+	1 - 0, 2, 6, 4, 2, 4, 2
+None or not compatible one specified, choosing a random one: pattern 0
+Initializing Stella Instance...
+Done. Parameters:
+	Threads: 1 (1 Sieve Worker(s))
+	Constellation pattern: n + (0, 2, 6, 8, 12, 18, 20), length 7
+	Prime Table: 102638126 entries, largest 2094667741
+		Generated in 6.903919 s
+		Modular Inverses/Division Data generated in 18.860249 s
+	Primorial: p96# = 503# = ~6.279780213594*10^208 (694 bits)
+	Sieve Size: 2^25 = 33554432 (524288 words)
+	Sieve Iterations: 16
+	Primorial Factor Max: 536870912
+	Primorial Offsets: 92 entries
+	Prime index threshold: 28192750
+-----------------------------------------------------------
+[Feb 17 13:40:05.2] Started mining at block 2303938, difficulty 1022.000
+Received: {"id": null, "method": "mining.notify", "params": ["17c76", "7b6624cdca05b2dc9f701f064259c414aa2f292d611fb2264d3ab2b966cbc61b", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c22723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fe00", "67b33c37", false, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
+[Feb 17 13:40:35.2] 2.5 RIC/d (1941.7 c/s, r 18.82), Sh: 0/0
+Received: {"id": null, "method": "mining.notify", "params": ["17c77", "7b6624cdca05b2dc9f701f064259c414aa2f292d611fb2264d3ab2b966cbc61b", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c22723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fe00", "67b33c55", false, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
+[Feb 17 13:41:05.2] 2.9 RIC/d (1948.6 c/s, r 18.41), Sh: 0/0
+Received: {"id": null, "method": "mining.notify", "params": ["17c78", "7b6624cdca05b2dc9f701f064259c414aa2f292d611fb2264d3ab2b966cbc61b", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c22723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fe00", "67b33c73", false, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
+[Feb 17 13:41:19.5] 5-share found by worker thread 0
+Sending: {"id": 2, "method": "mining.submit", "params": ["ric1pstel08s5pnm6mz2e3u90jag0v3gcjsjpnwf0lp370j9z32scqg4qv5ku6r", "17c75", "5637bc7a", "0000000067b33c19", "006000000000000000000000000011df3f4400000000000067b41e1f45f30002"]}
+Received: {"id": 2, "result": true, "error": null}
+[Feb 17 13:41:21.7] 5-share found by worker thread 0
+Sending: {"id": 3, "method": "mining.submit", "params": ["ric1pstel08s5pnm6mz2e3u90jag0v3gcjsjpnwf0lp370j9z32scqg4qv5ku6r", "17c75", "5637bc7a", "0000000067b33c19", "006000000000000000000000000013838d4800000000000067b41e1f45f30002"]}
+Received: {"id": 3, "result": true, "error": null}
+Received: {"id": null, "method": "mining.notify", "params": ["17c79", "8c1a0af3dd998654f891b049d14c7a7b6011d6b2c534320ec25b718c7ea8a45c", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c32723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fc94", "67b33c84", true, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
+[Feb 17 13:41:24.3] Block 2303939, average 79.0 s, difficulty 1020.578
+[Feb 17 13:41:35.2] 2.9 RIC/d (1961.5 c/s, r 18.46), Sh: 2/2 (100.00%)
+Received: {"id": null, "method": "mining.notify", "params": ["17c7a", "8c1a0af3dd998654f891b049d14c7a7b6011d6b2c534320ec25b718c7ea8a45c", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c32723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fc94", "67b33ca2", false, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
+[Feb 17 13:42:05.3] 3.3 RIC/d (2115.2 c/s, r 18.33), Sh: 2/2 (100.00%)
+[Feb 17 13:42:05.6] 5-share found by worker thread 0
+Sending: {"id": 4, "method": "mining.submit", "params": ["ric1pstel08s5pnm6mz2e3u90jag0v3gcjsjpnwf0lp370j9z32scqg4qv5ku6r", "17c79", "3a253fbe", "0000000067b33c84", "00600000000000000000000000001dc9e8b900000000000067b41e1f45f30002"]}
+Received: {"id": 4, "result": true, "error": null}
+[Feb 17 13:42:18.1] 6-share found by worker thread 0
+Sending: {"id": 5, "method": "mining.submit", "params": ["ric1pstel08s5pnm6mz2e3u90jag0v3gcjsjpnwf0lp370j9z32scqg4qv5ku6r", "17c79", "6e0137eb", "0000000067b33c84", "006000000000000000000000000003cc89c600000000000067b41e1f45f30002"]}
+Received: {"id": 5, "result": true, "error": null}
+Received: {"id": null, "method": "mining.notify", "params": ["17c7b", "8c1a0af3dd998654f891b049d14c7a7b6011d6b2c534320ec25b718c7ea8a45c", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c32723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fc94", "67b33cc0", false, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
+[Feb 17 13:42:35.3] 3.1 RIC/d (2112.3 c/s, r 18.50), Sh: 4/4 (100.00%)
+[Feb 17 13:42:51.2] 5-share found by worker thread 0
+Sending: {"id": 6, "method": "mining.submit", "params": ["ric1pstel08s5pnm6mz2e3u90jag0v3gcjsjpnwf0lp370j9z32scqg4qv5ku6r", "17c79", "6e0137eb", "0000000067b33c84", "00600000000000000000000000001f1881fe00000000000067b41e1f45f30002"]}
+Received: {"id": 6, "result": true, "error": null}
+Received: {"id": null, "method": "mining.notify", "params": ["17c7c", "8c1a0af3dd998654f891b049d14c7a7b6011d6b2c534320ec25b718c7ea8a45c", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c32723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fc94", "67b33cde", false, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
+[Feb 17 13:42:58.5] 5-share found by worker thread 0
+Sending: {"id": 7, "method": "mining.submit", "params": ["ric1pstel08s5pnm6mz2e3u90jag0v3gcjsjpnwf0lp370j9z32scqg4qv5ku6r", "17c7a", "7b636b2a", "0000000067b33ca2", "006000000000000000000000000000b46e8d00000000000067b41e1f45f30002"]}
+Received: {"id": 7, "result": true, "error": null}
+[Feb 17 13:43:05.3] 3.2 RIC/d (2099.9 c/s, r 18.41), Sh: 6/6 (100.00%)
+Received: {"id": null, "method": "mining.notify", "params": ["17c7d", "8c1a0af3dd998654f891b049d14c7a7b6011d6b2c534320ec25b718c7ea8a45c", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c32723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fc94", "67b33cfc", false, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
+Received: {"id": null, "method": "mining.notify", "params": ["17c7e", "d7a2f34eac122c01dabf5b0c95b6bb47e72cc1786a38943b7cb9e170a50b6167", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c42723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fc60", "67b33d03", true, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
+[Feb 17 13:43:31.1] Block 2303940, average 102.9 s, difficulty 1020.375
+[Feb 17 13:43:35.3] 3.3 RIC/d (2119.7 c/s, r 18.36), Sh: 6/6 (100.00%)

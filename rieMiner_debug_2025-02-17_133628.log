@@ -1,0 +1,58 @@
+rieMiner 2501, Riecoin miner by Pttn and contributors
+Project page: https://riecoin.xyz/rieMiner
+Riecoin Whitepaper: https://riecoin.xyz/Whitepaper
+Launch with 'help' as first argument for a quick usage guide
+-----------------------------------------------------------
+Assembly code by Michael Bell (Rockhawk)
+G++ 9.4.0 - https://gcc.gnu.org/
+GMP 6.2.0 - https://gmplib.org/
+PicoSHA2 27fcf69 - https://github.com/okdshin/PicoSHA2
+Curl 7.68.0 - https://curl.haxx.se/
+NLohmann Json 3.7.3 - https://json.nlohmann.me/
+-----------------------------------------------------------
+Build for: Linux on x64
+Processor: AMD EPYC 7763 64-Core Processor                
+Best SIMD instructions supported by the CPU: AVX2
+This build supports AVX2
+Physical Memory: 15.606 GiB
+-----------------------------------------------------------
+Opening configuration file /workspaces/codespaces-blank/new/rieMiner/rie.conf...
+Debug file: rieMiner_debug_2025-02-17_133628.log
+Can be disabled with 'LogDebug = No'.
+Pooled mining via host Stelo.xyz, port 2005
+Username: ric1pstel08s5pnm6mz2e3u90jag0v3gcjsjpnwf0lp370j9z32scqg4qv5ku6r
+Password: <0 character(s)>
+Auto retune when the Difficulty varies by a factor 1.03
+Stats refresh interval: 30 s
+Connecting to Riecoin server...
+Host: Stelo.xyz -> 195.15.240.165
+Sending: {"id": 0, "method": "mining.subscribe", "params": ["rieMiner/2501"]}
+Received: {"id": 0, "result": [[["mining.notify", "00025a2e"]],"00025a2e", 4], "error": null}
+Successfully subscribed to the pool. Subscriptions:
+	mining.notify: 00025a2e
+ExtraNonce1    = 00025a2e
+extraNonce2Len = 4
+Received: {"id": 1, "result": true, "error": null}
+{"id": null, "method": "mining.notify", "params": ["17c6e", "7b6624cdca05b2dc9f701f064259c414aa2f292d611fb2264d3ab2b966cbc61b", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c22723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fe00", "67b33b47", true, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
+Successfully authorized by the pool.
+Accepted constellation pattern(s):
+	0 - 0, 2, 4, 2, 4, 6, 2
+	1 - 0, 2, 6, 4, 2, 4, 2
+None or not compatible one specified, choosing a random one: pattern 0
+Initializing Stella Instance...
+Done. Parameters:
+	Threads: 4 (2 Sieve Worker(s))
+	Constellation pattern: n + (0, 2, 6, 8, 12, 18, 20), length 7
+	Prime Table: 102638126 entries, largest 2094667741
+		Generated in 6.843797 s
+		Modular Inverses/Division Data generated in 6.501784 s
+	Primorial: p96# = 503# = ~6.279780213594*10^208 (694 bits)
+	Sieve Size: 2^25 = 33554432 (524288 words)
+	Sieve Iterations: 16
+	Primorial Factor Max: 536870912
+	Primorial Offsets: 92 entries
+	Prime index threshold: 28192750
+-----------------------------------------------------------
+[Feb 17 13:36:43.3] Started mining at block 2303938, difficulty 1022.000
+Received: {"id": null, "method": "mining.notify", "params": ["17c6f", "7b6624cdca05b2dc9f701f064259c414aa2f292d611fb2264d3ab2b966cbc61b", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c22723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fe00", "67b33b65", false, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
+Received: {"id": null, "method": "mining.notify", "params": ["17c70", "7b6624cdca05b2dc9f701f064259c414aa2f292d611fb2264d3ab2b966cbc61b", "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1703c22723", "2f5374656c6f2e78797a2fffffffff02807c814a0000000022512082f3f79e140cf7ad89598f0af9750f64518942419b92ff863e7c8a28aa18022a0000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000", [], "20000000", "0003fe00", "67b33b83", false, 1, [[0, 2, 4, 2, 4, 6, 2], [0, 2, 6, 4, 2, 4, 2]]]}
